@@ -1,0 +1,20 @@
+
+<navbar></navbar>
+
+<side-bar></side-bar>
+
+
+
+
+        <div class="allWods" ng-repeat='wods in allWods | orderBy: "createdAt"'>
+            <div class="wods">
+
+            <h1>{{wods.date | date:'shortDate'}}</h1>
+            <b>{{wods.title}}</b><br>
+            {{wods.body}}
+        </div>
+
+
+
+
+        </div>

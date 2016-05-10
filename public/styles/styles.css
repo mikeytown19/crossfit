@@ -1,0 +1,134 @@
+html,body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+}
+a{
+    text-decoration: none;
+color: inherit;
+}
+@media (max-width: 700px){
+    .allWods{
+        display: flex;
+        justify-content: center;
+    }
+    .wods{
+        display: flex;
+    max-width: 30vh;
+    flex-direction: column;
+    min-width: 14em;
+    }
+    .sideBarView{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .navBarCollumn{
+        display: flex;
+        width: 100%;
+        height: 10vh;
+
+    }
+    .sidearIcon{
+        margin-right: 1vh;
+    }
+    .navText{
+        font-size: 3vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-transform: capitalize;
+    margin-left: 2em;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1.6px;
+
+    }
+    .hamPos{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 3em;
+    }
+    .hamburger{
+    border: none;
+    background-color: inherit;
+    font-size: 2em;
+    margin-left: 16px;
+    margin-top: 16px;
+    color: slategrey;
+    }
+    .hamburgerIn{
+        border: none;
+        background-color: inherit;
+        font-size: 2em;
+        margin-right: 27px;
+        margin-top: 22px;
+        color: lightgray;
+    }
+    .slideout-menu {
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background: #49547C;
+        z-index: 100;
+        }
+
+
+
+        .homePage{
+            display: none;
+        }
+
+}
+@media (min-width: 701px){
+
+    .hamburger{
+    border: none;
+    background-color: inherit;
+    font-size: 2em;
+    margin-left: 12px;
+    margin-top: 11px;
+    color: slategrey;
+    }
+.homePage{
+    background-color: teal;
+    margin: 0;
+    padding: 0;
+
+}
+ .slideout-menu {
+     display: none;
+ }
+ .slideout-menu-toggle{
+     display: none;
+ }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+}

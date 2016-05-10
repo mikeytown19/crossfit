@@ -3,12 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/styles.css" media="screen" title="no title" charset="utf-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
         <title></title>
     </head>
     <body ng-controller="mainCtrl">
 
-        
+
+
+        <ui-view></ui-view>
 
 
         <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
@@ -17,8 +21,32 @@
 
 
 
+     <script src="//cdn.jsdelivr.net/satellizer/0.14.0/satellizer.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.11/slideout.min.js"></script>
+
      <script src='app.js'> </script>
      <script src='components/controllers/mainCtrl.js'> </script>
+     <script src='components/controllers/homeCtrl.js'> </script>
+     <script src='components/controllers/accountCtrl.js'> </script>
+     <script src='components/controllers/wodCtrl.js'> </script>
+
+     <script src='components/controllers/schedualeCtrl.js'> </script>
+     <script src='components/controllers/settingsCtrl.js'> </script>
+     <script src='components/directives/sideBarDir.js'> </script>
+     <script src='components/directives/navBarDir.js'> </script>
+
+
+
+
+
+
+     <script src='components/controllers/loginCtrl.js'> </script>
+     <script src='components/services/loginService.js'> </script>
+     <script src='components/services/settingsService.js'> </script>
+     <script src='components/services/wodService.js'> </script>
+
+
+
 
     </body>
 

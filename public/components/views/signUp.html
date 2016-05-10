@@ -1,0 +1,21 @@
+<navbar></navbar>
+
+<side-bar></side-bar>
+
+<div class="item item-input">
+<input type="text" placeholder="Name" ng-model="newUser.name">
+</div>
+
+<div class="item item-input">
+<input type="email" placeholder="Email" ng-model="newUser.email">
+</div>
+<div class="item item-input">
+<input type="text" placeholder="Username" ng-model="newUser.username">
+</div>
+<div class="item item-input">
+<input type="password" placeholder="Password" ng-model="newUser.password">
+</div>
+</div>
+<button class="button button-large button-balanced" id="submitBut" ng-click="signUp(newUser)">
+Sign up
+</button>

@@ -2,14 +2,20 @@ var express = require('express');
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var cors = require('cors');
-var userCtrl = require("./controllers/userCtrl.js")
-var User = require("./models/userSchema.js")
+var userCtrl = require("./controllers/userCtrl.js");
+var wodCtrl = require("./controllers/wodCtrl.js")
+var User = require("./models/userSchema.js");
+var Wod = require("./models/wod.js")
+
 
 
 var app = express();
 
+///////////////////
+/////MiddleWare///
+/////////////////
+app.use(bodyParser.json());
 app.use(express.static('../public'))
-
 
 
 
@@ -28,6 +34,15 @@ app.use(express.static('../public'))
 app.post('/api/user/', userCtrl.addUser);
 app.post('/auth/login', userCtrl.userLogin);
 app.post('/auth/signup', userCtrl.userSignUp);
+
+
+////////////////
+///////Wod/////
+//////////////
+
+
+app.post('/api/wod/', wodCtrl.addWod);
+app.get('/api/wod/', wodCtrl.getAllWods);
 
 
 

@@ -1,7 +1,7 @@
 var User = require('../models/userSchema');
 var moment = require('moment');
 var jwt = require('jwt-simple');
-var Keys = require('../keys.js');
+var Keys = require('../../keys.js');
 
 function createJWT(user) {
   var payload = {
@@ -78,6 +78,7 @@ updateUser: function(req, res, next) {
         });
     },
     userSignUp: function(req, res) {
+        console.log(req.body);
         User.findOne({ email: req.body.email }, function(err, existingUser) {
           if (existingUser) {
             return res.status(409).send({ message: 'Email is already taken' });

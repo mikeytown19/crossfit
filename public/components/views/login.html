@@ -1,0 +1,21 @@
+<navbar></navbar>
+<side-bar></side-bar>
+
+
+<a ui-sref='signUp'>sign Up </a>
+
+
+
+            <div class="loginBox">
+              <input   ng-model="user.username"class="loginBoxText" onfocus="this.placeholder = ''"type="text" name="name" value="" placeholder="Username" onfocusout="this.placeholder = 'Username'">
+            </div>
+
+
+            <div class="loginBox">
+              <input ng-model="user.password"class="loginBoxText" type="password" onfocus="this.placeholder = ''" name="name" value="" placeholder="Password" onfocusout="this.placeholder = 'Password'">
+            </div>
+
+            <button ng-click="login(user)" class='loginButton'><div class='submitText'>Login</div</button>
+
+
+          </div>

@@ -3,15 +3,29 @@
 
 <side-bar></side-bar>
 
+        <div class="wodHeader">
+            Wod
+        </div>
 
 
-
-        <div class="allWods" ng-repeat='wods in allWods | orderBy: "createdAt"'>
+        <div class="allWods" ng-repeat='wods in allWods | orderBy: "-createdAt"'>
             <div class="wods">
+                    <div class="wodDate">
+                        {{wods.date | date:'shortDate'}}
+                    </div>
+                    <div class="wodType">
+                        {{wods.type}}
 
-            <h1>{{wods.date | date:'shortDate'}}</h1>
-            <b>{{wods.title}}</b><br>
-            {{wods.body}}
+                    </div>
+                        <div class="wodTitle">
+                            {{wods.title}}
+
+                        </div>
+
+                        <div class="wodBody">
+                            {{wods.body}}
+
+                        </div>
         </div>
 
 

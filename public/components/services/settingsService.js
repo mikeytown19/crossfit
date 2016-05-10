@@ -10,6 +10,13 @@ this.newWod = function(wod){
 
     })
 }
-
+this.getCurrentUser = function(){
+    return $http({
+        method:"GET",
+        url:"/api/me"
+    }).then(function(response) {
+      return response;
+    })
+}
 
 });

@@ -16,14 +16,22 @@
     </div>
 
 </div>
-<div class="navBarCollumn">
+<div class="navBarCollumn" ng-model='admin' ng-if='admin'>
+    <div class="navText">
+        <a ui-sref="addWod"><i class="sidebarIcon fa fa-plus" aria-hidden="true"></i>
+Add Wod</a>
+
+    </div>
+
+</div>
+<!-- <div class="navBarCollumn">
     <div class="navText">
         <a ui-sref="scheduale"><i class="sidebarIcon fa fa-calendar-minus-o" aria-hidden="true"></i>
     Scheduale</a>
 
     </div>
 
-</div>
+</div> -->
 <div class="navBarCollumn">
     <div class="navText">
         <a ui-sref="account"><i class="sidebarIcon fa fa-wheelchair" aria-hidden="true"></i>
@@ -40,6 +48,7 @@ Settings</a>
     </div>
 
 </div>
+
 </div>
 
 </div>

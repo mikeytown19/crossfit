@@ -8,6 +8,10 @@ var userSchema = new Schema({
     name: {type: String},
     username:{type: String, unique: false},
     email:{type: String, required: false},
+    admin: {type: Boolean, default: false, required: true},
+    Wods:[{time:Number,
+    wod:{type: mongoose.Schema.Types.ObjectId, ref: 'wod'}
+    }],
     password:{type: String, required: false},
     bio:{type: String, required:false},
     gender: String,

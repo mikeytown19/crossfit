@@ -1,0 +1,29 @@
+<navbar></navbar>
+<side-bar></side-bar>
+
+<div class="addWod" ng-model='admin'>
+    <div ng-if='admin'>
+
+            <div class="inputWod">
+
+
+            <textarea name="name" rows="6" cols="30" placeholder="Warmup" ng-model='wod.warmupBody'></textarea>
+
+            <textarea name="name" rows="6" cols="30" placeholder="Skill / Strength" ng-model='wod.skillsBody'></textarea>
+
+
+                <select class="selectWodType" ng-model='wod.type' name="select" placeholder='choose type'>
+                     <option value="" default selected>choose wod type</option>
+                    <option value="Amrap">Amrap</option>
+                    <option value="Emom" >Emom</option>
+                    <option value="For Time">For Time</option>
+                </select>
+
+                <textarea name="name" rows="3" cols="30" placeholder="Wod name" ng-model='wod.title'></textarea>
+
+            <textarea name="name" rows="6" cols="30" placeholder="Wod" ng-model='wod.body'></textarea>
+            <button type="button" ng-click='newWod(wod)'name="button"></button>
+        </div>
+
+    </div>
+</div>

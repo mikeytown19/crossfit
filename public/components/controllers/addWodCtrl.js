@@ -1,13 +1,10 @@
-angular.module("crossfit").controller("settingsCtrl", function($scope,settingsService, $auth, $state) {
+angular.module("crossfit").controller("addWodCtrl", function($scope,settingsService, $auth, $state) {
 
 
+    $scope.newWod = function(wod){
+        settingsService.newWod(wod);
+    }
 
-
-$scope.logout = function(){
- $auth.logout().then(function(res){
-     $state.go('login');
- });
-}
     settingsService.getCurrentUser().then(function(res){
         console.log(res.data.admin)
 
@@ -16,5 +13,6 @@ $scope.logout = function(){
         console.log($scope.currentUser)
 
     })
+
 
 });

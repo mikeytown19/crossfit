@@ -1,4 +1,17 @@
-angular.module("crossfit").controller("homeCtrl", function($scope) {
+angular.module("crossfit").controller("homeCtrl", function($scope,settingsService) {
+
+
+
+
+
+    settingsService.getCurrentUser().then(function(res){
+
+        $scope.currentUser = res.data
+        $scope.admin = res.data.admin
+
+    })
+
+
 
     $(document).ready(function() {
         $('.slideout-menu-toggle').on('click', function(event) {

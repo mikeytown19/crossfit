@@ -8,16 +8,80 @@ a{
     text-decoration: none;
 color: inherit;
 }
+.allWods{
+    display: flex;
+    justify-content: center;
+}
+.wods{
+    display: flex;
+max-width: 30vh;
+flex-direction: column;
+min-width: 14em;
+margin-left: 6vh;
+
+}
+.wodDate{
+    display: flex;
+    /* justify-content: center; */
+    font-size: 6vh;
+    font-style: oblique;
+    font-weight: 100;
+    margin-bottom: 2vh;
+
+}
+.wodType{
+    font-weight: 200;
+    font-size: 3vh;
+    color: tomato;
+    margin-bottom: 1vh;
+    letter-spacing: 1.3px;
+}
+.wodTitle{
+    font-weight: 100;
+    font-size: 4vh;
+    letter-spacing: 1.3px;
+    margin-top: 0vh;
+    margin-bottom: 1vh;
+}
+.wodBody{
+    margin-bottom: 14vh;
+    font-weight: 200;
+    display: flex;
+    flex-wrap: wrap;
+    width: 33vh;
+    max-height: 26em;
+}
+.inputWod{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.selectWodType{
+    background-color: tomato;
+    border: none;
+    color: white;
+}
+textarea{
+
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
 @media (max-width: 700px){
-    .allWods{
+    .wodHeader{
         display: flex;
         justify-content: center;
-    }
-    .wods{
-        display: flex;
-    max-width: 30vh;
-    flex-direction: column;
-    min-width: 14em;
+        font-weight: 100;
+        font-size: 7vh;
+        margin-top: -45px;
+        letter-spacing: 2px;
+        margin-bottom: 4vh;
+        color: slategray;
+        text-transform: uppercase;
     }
     .sideBarView{
         display: flex;
@@ -84,6 +148,18 @@ color: inherit;
 
 }
 @media (min-width: 701px){
+    .wodHeader{
+        display: none;
+    }
+    .wodDate{
+        display: flex;
+        /* justify-content: center; */
+        font-size: 6vh;
+        font-style: oblique;
+        font-weight: 100;
+        margin-bottom: 2vh;
+        margin-top: 5vh;
+    }
 
     .hamburger{
     border: none;

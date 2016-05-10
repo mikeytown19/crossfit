@@ -35,6 +35,11 @@ angular.module("crossfit", ['satellizer','ui.router']).config(function($statePro
           templateUrl: 'components/views/settings.html',
           controller: 'settingsCtrl'
       })
+      .state('addWod', {
+          url: '/addWod',
+        templateUrl: 'components/views/addWod.html',
+        controller: 'addWodCtrl'
+    })
 
 
 

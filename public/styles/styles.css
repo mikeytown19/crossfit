@@ -44,12 +44,16 @@ margin-left: 6vh;
     margin-bottom: 1vh;
 }
 .wodBody{
-    margin-bottom: 14vh;
+    margin-bottom: 5vh;
     font-weight: 200;
     display: flex;
     flex-wrap: wrap;
     width: 33vh;
     max-height: 26em;
+}
+.sidebarIcon1{
+    font-size: 6vh;
+
 }
 .inputWod{
     display: flex;
@@ -61,14 +65,23 @@ margin-left: 6vh;
     border: none;
     color: white;
 }
+.wodNameBox{
+        height: 7vh;
+}
 textarea{
 
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 4px;
-    background-color: #f8f8f8;
-    resize: none;
+    padding: 1vh 0 0 1vh;
+        width: 36vh;
+        box-sizing: border-box;
+        border: none;
+        border-radius: 4px;
+        background-color: #f8f8f8;
+        resize: none;
+        margin: 6px;
+        height: 19vh;
+        font-size: 2vh;
+        font-weight: 100;
+        letter-spacing: 1px;
 }
 
 @media (max-width: 700px){

@@ -6,23 +6,25 @@
 
             <div class="inputWod">
 
+                <textarea class='wodNameBox'name="name" rows="3" cols="30" placeholder="Message" ng-model='wod.inforMessage'></textarea>
 
             <textarea name="name" rows="6" cols="30" placeholder="Warmup" ng-model='wod.warmupBody'></textarea>
 
             <textarea name="name" rows="6" cols="30" placeholder="Skill / Strength" ng-model='wod.skillsBody'></textarea>
 
 
-                <select class="selectWodType" ng-model='wod.type' name="select" placeholder='choose type'>
+                <!-- <select class="selectWodType" ng-model='wod.type' name="select" placeholder='choose type'>
                      <option value="" default selected>choose wod type</option>
                     <option value="Amrap">Amrap</option>
                     <option value="Emom" >Emom</option>
                     <option value="For Time">For Time</option>
-                </select>
+                </select> -->
 
-                <textarea name="name" rows="3" cols="30" placeholder="Wod name" ng-model='wod.title'></textarea>
+                <textarea class='wodNameBox'name="name" rows="3" cols="30" placeholder="Wod name" ng-model='wod.title'></textarea>
 
-            <textarea name="name" rows="6" cols="30" placeholder="Wod" ng-model='wod.body'></textarea>
-            <button type="button" ng-click='newWod(wod)'name="button"></button>
+            <textarea name="name" rows="6" cols="30" placeholder="Wod" ng-model='wod.wodBody'></textarea>
+            <button type="button" ng-click='newWod(wod)'name="button">Submit<i class="fa fa-paper-plane" aria-hidden="true"></i>
+</button>
         </div>
 
     </div>

@@ -3,6 +3,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var wodSchema = new Schema ({
+    infoMessage: {type: String, required: false},
   title: {type: String, required: false},
   type: {type: String, required: false},
   day: {type: String, required: false},

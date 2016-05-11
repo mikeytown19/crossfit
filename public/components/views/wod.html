@@ -13,17 +13,33 @@
                     <div class="wodDate">
                         {{wods.date | date:'shortDate'}}
                     </div>
+                    
+                        {{wods.infoMessage}}
+
+
                     <div class="wodType">
-                        {{wods.type}}
+                        {{wods.warmup}}
+
+                    </div>
+                    <div class="wodBody">
+                        {{wods.warmupBody}}
 
                     </div>
                         <div class="wodTitle">
-                            {{wods.title}}
+                            {{wods.skills}}
 
                         </div>
 
                         <div class="wodBody">
-                            {{wods.body}}
+                            {{wods.skillsBody}}
+
+                        </div>
+                        <div class="wodTitle">
+                            {{wods.metcon}}
+
+                        </div>
+                        <div class="wodBody">
+                            {{wods.wodBody}}
 
                         </div>
         </div>

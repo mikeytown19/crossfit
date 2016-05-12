@@ -3,5 +3,14 @@
 
 
 
+<textarea class='wodNameBox'name="name" rows="3" cols="30" placeholder="string" ng-model='str'></textarea>
+
+
+
+<button type="button" name="button" ng-click='string(str)'></button>
 <button type="button" class='sidebarIcon1' ng-click='logout()' name="button"><i class="fa fa-sign-out " aria-hidden="true">Logout</i>
 </button>
+
+
+ <input type="file"  prof-pic profile="currentUser" accept="image/*" />
+ <div><img ng-src=" {{currentUser.profpic}}" alt="" height="50px"width="50px"/> </div>

@@ -17,4 +17,15 @@ $scope.logout = function(){
 
     })
 
+
+    // Define the string
+
+
+// Encode the String
+ // Outputs: "SGVsbG8gV29ybGQh"
+
+// Decode the String
+ // Outputs: "Hello World!"
+
+
 });

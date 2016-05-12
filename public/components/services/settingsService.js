@@ -18,5 +18,12 @@ this.getCurrentUser = function(){
       return response;
     })
 }
+this.editUser = function(user){
+    return $http({
+        method:"PUT",
+        url:'/api/user/' + user._id,
+        data:user
+    })
+}
 
 });

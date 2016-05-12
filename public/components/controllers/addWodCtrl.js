@@ -2,6 +2,7 @@ angular.module("crossfit").controller("addWodCtrl", function($scope,settingsServ
 
 
     $scope.newWod = function(wod){
+        
         settingsService.newWod(wod);
     }
 

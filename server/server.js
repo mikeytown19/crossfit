@@ -5,7 +5,10 @@ var cors = require('cors');
 var userCtrl = require("./controllers/userCtrl.js");
 var wodCtrl = require("./controllers/wodCtrl.js")
 var User = require("./models/userSchema.js");
-var Wod = require("./models/wod.js")
+var Wod = require("./models/wod.js");
+var Amazon = require('./controllers/awsCtrl.js');
+var Keys = require('../keys.js');
+
 
 
 
@@ -14,7 +17,8 @@ var app = express();
 ///////////////////
 /////MiddleWare///
 /////////////////
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '50mb'}));
+app.use(bodyParser.urlencoded({limit: '50mb', extended: true}));
 app.use(express.static('../public'))
 
 
@@ -35,6 +39,7 @@ app.post('/api/user/', userCtrl.addUser);
 app.post('/auth/login', userCtrl.userLogin);
 app.post('/auth/signup', userCtrl.userSignUp);
 app.get('/api/me', userCtrl.ensureAuthenticated, userCtrl.getCurrentUser);
+app.put('/api/user/:id', userCtrl.updateUser);
 
 
 ////////////////
@@ -49,6 +54,11 @@ app.get('/api/wod/', wodCtrl.getAllWods);
 
 
 
+////////////////
+///////IMG/////
+//////////////
+
+app.post('/api/newimage', Amazon.saveImage);
 
 
 

@@ -44,6 +44,8 @@ margin-left: 6vh;
     margin-bottom: 1vh;
 }
 .wodBody{
+    white-space: pre-line;
+
     margin-bottom: 5vh;
     font-weight: 200;
     display: flex;
@@ -68,7 +70,17 @@ margin-left: 6vh;
 .wodNameBox{
         height: 7vh;
 }
+.commentLogo{
+
+}
+.borderBottom{
+    border-bottom: whitesmoke;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+    margin-top: 0px;
+}
 textarea{
+    white-space: pre;
 
     padding: 1vh 0 0 1vh;
         width: 36vh;

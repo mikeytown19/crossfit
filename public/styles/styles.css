@@ -20,6 +20,162 @@ min-width: 14em;
 margin-left: 6vh;
 
 }
+
+.signInImage{
+background: url('../img/rope.jpg')no-repeat center center fixed;
+height: 100%;
+background-size: cover;
+position: fixed;
+width: 100%;
+z-index: -1px;
+
+}
+.loginImage{
+background: url('../img/pistol.png')no-repeat center center fixed;
+height: 100%;
+background-size: cover;
+position: fixed;
+width: 100%;
+
+}
+.userNameLogin{
+    background: transparent;
+border-bottom-width: thin;
+border-bottom-color: grey;
+/* border-radius: 10px; */
+border-right: none;
+height: 5vh;
+width: 43vh;
+border-top: none;
+border-left: none;
+margin-bottom: 17px;
+font-size: 2vh;
+font-weight: 100;
+letter-spacing: 1.1px;
+color: white;
+outline: none;
+transition: .1s;
+
+}
+.userNameLogin:focus{
+    background: transparent;
+    border-bottom-width: 3px;
+    border-bottom-color: #FC913A;
+/* border-radius: 10px; */
+border-right: none;
+height: 5vh;
+width: 43vh;
+border-top: none;
+border-left: none;
+margin-bottom: 17px;
+font-size: 2vh;
+font-weight: 100;
+letter-spacing: 1.1px;
+color: white;
+outline: none;
+
+}
+
+
+#userNameLogin{
+    background: transparent;
+border-bottom-width: thin;
+border-bottom-color: white;
+/* border-radius: 10px; */
+border-right: none;
+height: 5vh;
+width: 43vh;
+border-top: none;
+border-left: none;
+margin-bottom: 17px;
+font-size: 3vh;
+font-weight: 100;
+letter-spacing: 1.1px;
+color: white;
+outline: none;
+transition: .1s;
+}
+#userNameLogin:focus{
+    background: transparent;
+border-bottom-width: 3px;
+border-bottom-color: #FC913A;
+/* border-radius: 10px; */
+border-right: none;
+height: 5vh;
+width: 43vh;
+border-top: none;
+border-left: none;
+margin-bottom: 17px;
+font-size: 3vh;
+font-weight: 100;
+letter-spacing: 1.1px;
+color: white;
+outline: none;
+}
+.loginScreen{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 62vh;
+}
+.loginScreen1{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 40vh;
+}
+.loginButton{
+    color: white;
+background: inherit;
+border-width: thin;
+width: 43vh;
+height: 8vh;
+border: 2px solid transparent;
+border-radius: 7vh 7vh  7vh  7vh;
+-moz-border-image: -moz-linear-gradient(right, #FC913A 0%, #FF4E50 100%);
+  -webkit-border-image: -webkit-linear-gradient(right, #FC913A 0%, #FF4E50 100%);
+  border-image: linear-gradient(to left, #FC913A 0%, #FF4E50 100%);
+  border-image-slice: 1;
+  outline: none;
+  font-size: 3vh;
+  font-weight: 100;
+  font-family: inherit;
+  letter-spacing: 2px;
+  margin-bottom: 4vh;
+
+}.loginButton1{
+    color: white;
+background: inherit;
+border-width: thin;
+width: 43vh;
+height: 8vh;
+
+  border-image-slice: 1;
+  outline: none;
+  font-size: 3vh;
+  font-weight: 100;
+  font-family: inherit;
+  letter-spacing: 2px;
+  margin-bottom: 4vh;
+
+}
+#white{
+    margin-top: 1vh;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 1.2px;
+    font-size: 2vh;
+
+}
+.signUpText{
+    display: flex;
+    justify-content: center;
+}
+img{
+    margin: auto;
+ width: 100%;
+ height: auto;
+}
 .wodDate{
     display: flex;
     /* justify-content: center; */
@@ -46,7 +202,6 @@ margin-left: 6vh;
 .wodBody{
     white-space: pre-line;
 
-    margin-bottom: 5vh;
     font-weight: 200;
     display: flex;
     flex-wrap: wrap;
@@ -97,6 +252,14 @@ textarea{
 }
 
 @media (max-width: 700px){
+    .profPic{
+        height: 12vh;
+width: 12vh;
+border-radius: 54%;
+border-width: 2px;
+border-style: solid;
+border-color: white;
+    }
     .wodHeader{
         display: flex;
         justify-content: center;
@@ -137,7 +300,7 @@ textarea{
     .hamPos{
         display: flex;
         justify-content: flex-end;
-        margin-bottom: 3em;
+        margin-bottom: 1em;
     }
     .hamburger{
     border: none;

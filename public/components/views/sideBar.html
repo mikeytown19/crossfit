@@ -32,7 +32,15 @@ Add Wod</a>
     </div>
 
 </div> -->
-<div class="navBarCollumn">
+<div class="navBarCollumn" ng-model='admin' ng-if='!admin'>
+    <div class="navText">
+        <a ui-sref="checkIn"><i class="sidebarIcon fa fa-check" aria-hidden="true"></i>
+    Check In</a>
+
+    </div>
+
+</div>
+<div class="navBarCollumn" >
     <div class="navText">
         <a ui-sref="account"><i class="sidebarIcon fa fa-wheelchair" aria-hidden="true"></i>
     Profile</a>

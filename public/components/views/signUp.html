@@ -1,19 +1,24 @@
 
+<div class="signInImage">
+    <div class="loginScreen1">
 
-<div class="item item-input">
-<input type="text" placeholder="Name" ng-model="newUser.name">
+<div class="loginBox">
+<input id='userNameLogin'type="text" placeholder="Name" ng-model="newUser.name">
 </div>
 
-<div class="item item-input">
-<input type="email" placeholder="Email" ng-model="newUser.email">
+<div class="loginBox  ">
+<input id='userNameLogin'type="email" placeholder="Email" ng-model="newUser.email">
 </div>
 <div class="item item-input">
-<input type="text" placeholder="Username" ng-model="newUser.username">
+<input id='userNameLogin'type="text" placeholder="Username" ng-model="newUser.username">
 </div>
 <div class="item item-input">
-<input type="password" placeholder="Password" ng-model="newUser.password">
+<input id='userNameLogin'type="password" placeholder="Password" ng-model="newUser.password">
 </div>
-</div>
-<button class="button button-large button-balanced" id="submitBut" ng-click="signUp(newUser)">
+<!-- <button class="" id="submitBut" ng-click="signUp(newUser)">
 Sign up
-</button>
+</button> -->
+<button ng-click="signUp(newUser)" class='loginButton1'><div class='submitText'>Sign Up</div></button>
+</div>
+
+</div>

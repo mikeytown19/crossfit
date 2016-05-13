@@ -2,7 +2,7 @@
 <side-bar></side-bar>
 
 
-
+<img class='profPic'ng-src="{{currentUser.profpic}}" alt="" />
 <textarea class='wodNameBox'name="name" rows="3" cols="30" placeholder="string" ng-model='str'></textarea>
 
 
@@ -13,4 +13,5 @@
 
 
  <input type="file"  prof-pic profile="currentUser" accept="image/*" />
- <div><img ng-src=" {{currentUser.profpic}}" alt="" height="50px"width="50px"/> </div>
+ <div>
+     <img ng-src=" {{currentUser.profpic}}" alt="" height="50px"width="50px"/> </div>

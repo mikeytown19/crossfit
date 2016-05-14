@@ -44,10 +44,27 @@
                         </div>
 
                         <i class="fa fa-comment-o commentLogo"  aria-hidden="true"></i>
+                        <div>
+                            <input placeholder="Post a reply..." ng-model="newComment"></input>
+
+                            <button type="button"ng-click="postComment(currentUser._id, wods._id, newComment)" name="button"></button>
+
+                            <div ng-repeat='comments in wods.comments track by $index'>
+                                {{comments.user.username}}:
+                                    {{comments.comment}}
+
+                            </div>
+
+                        </div>
                         <div class="borderBottom">
 
                         </div>
         </div>
+        <div >
+
+
+               </div>
+
 
 
 

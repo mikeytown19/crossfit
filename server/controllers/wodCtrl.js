@@ -37,7 +37,29 @@ updateWod: function(req, res, next) {
                res.status(200).json(resp);
            }
        });
-   },
+   }, addComment: function(req, res, next) {
+    Wod.findById(req.body.postId, function(err, post){
+      if (err) {
+        res.status(500).json(err);
+      }else {
+        post.comments.push({user: req.body.userId, comment: req.body.newComment});
+        post.save(function(err, data) {
+          if (err){
+            res.status(500).send(err);
+          }else {
+            res.status(200).json(data);
+          }
+        })
+      }
+    })
+  
+  },  deleteComment: function(req, res, next) {
+      var id = req.params.id;
+      var status = req.params.status;
+      Status.findByIdAndUpdate(status, {$pull: {comments: {_id: id}}}, function(err, response) {
+          err ? res.status(500).send(err) : res.status(200).send(response)
+      })
+  },
 
     getWod: function (req, res) {
         var id = req.params.id;

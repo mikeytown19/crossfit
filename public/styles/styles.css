@@ -22,7 +22,7 @@ margin-left: 6vh;
 }
 
 .signInImage{
-background: url('../img/rope.jpg')no-repeat center center fixed;
+background: url('../img/plank.jpg')no-repeat center center fixed;
 height: 100%;
 background-size: cover;
 position: fixed;
@@ -31,7 +31,7 @@ z-index: -1px;
 
 }
 .loginImage{
-background: url('../img/pistol.png')no-repeat center center fixed;
+background: url('../img/handstand-1.jpg')no-repeat center center fixed;
 height: 100%;
 background-size: cover;
 position: fixed;
@@ -122,7 +122,7 @@ margin-top: 62vh;
 display: flex;
 flex-direction: column;
 align-items: center;
-margin-top: 40vh;
+margin-top: 53vh;
 }
 .loginButton{
     color: white;
@@ -188,7 +188,7 @@ img{
 .wodType{
     font-weight: 200;
     font-size: 3vh;
-    color: tomato;
+    color: #FADE01;
     margin-bottom: 1vh;
     letter-spacing: 1.3px;
 }
@@ -218,7 +218,7 @@ img{
     flex-direction: column;
 }
 .selectWodType{
-    background-color: tomato;
+    background-color: #FADE01;
     border: none;
     color: white;
 }
@@ -280,21 +280,42 @@ border-color: white;
         display: flex;
         width: 100%;
         height: 10vh;
+        transition: .4s
+
+    }
+    .navBarCollumn:hover{
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        background-color: black;
 
     }
     .sidearIcon{
         margin-right: 1vh;
     }
     .navText{
-        font-size: 3vh;
-    display: flex;
-    align-items: center;
-    color: white;
-    text-transform: capitalize;
-    margin-left: 2em;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 100;
-    letter-spacing: 1.6px;
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        color: black;
+        text-transform: capitalize;
+        margin-left: 2em;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        letter-spacing: 1.6px;
+        transition: .2s
+
+    }
+    .navText:hover{
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        color: white;
+        text-transform: capitalize;
+        margin-left: 2em;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-weight: 200;
+        letter-spacing: 1.6px;
 
     }
     .hamPos{
@@ -316,7 +337,7 @@ border-color: white;
         font-size: 2em;
         margin-right: 27px;
         margin-top: 22px;
-        color: lightgray;
+        color: black;
     }
     .slideout-menu {
         position: fixed;
@@ -324,7 +345,7 @@ border-color: white;
         left: -250px;
         width: 250px;
         height: 100%;
-        background: #49547C;
+        background:#FADE01;
         z-index: 100;
         }
 

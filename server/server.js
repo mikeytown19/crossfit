@@ -50,6 +50,8 @@ app.put('/api/user/:id', userCtrl.updateUser);
 app.post('/api/wod/', wodCtrl.addWod);
 app.get('/api/wod/', wodCtrl.getAllWods);
 
+app.post('/api/wod/comment/', wodCtrl.addComment);
+app.delete('/api/wod/comment/:id/:status', wodCtrl.deleteComment);
 
 
 

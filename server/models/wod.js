@@ -16,11 +16,14 @@ var wodSchema = new Schema ({
   pic:{type:String, required:false},
   date: { type: Date, default: Date.now },
   comments: [{
-      body: String,
+      comment: String,
       user: {type: mongoose.Schema.Types.ObjectId, ref: 'User'}
   }]
 }, {timestamps: true})
 
-
+wodSchema.pre('find', function(next) {
+    this.populate('user comments.user');
+    next();
+})
 
 module.exports = mongoose.model('wod', wodSchema);

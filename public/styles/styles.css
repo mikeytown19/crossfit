@@ -93,7 +93,7 @@ font-weight: 100;
 letter-spacing: 1.1px;
 color: white;
 outline: none;
-transition: .1s;
+transition: .2s;
 }
 #userNameLogin:focus{
     background: transparent;
@@ -236,7 +236,6 @@ img{
 }
 textarea{
     white-space: pre;
-
     padding: 1vh 0 0 1vh;
         width: 36vh;
         box-sizing: border-box;
@@ -250,7 +249,29 @@ textarea{
         font-weight: 100;
         letter-spacing: 1px;
 }
+#customComment{
+        white-space: pre;
+        padding: 1vh 0 0 1vh;
+            width: 36vh;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 4px;
+            resize: none;
+            margin: 6px;
+            height: 10vh;
+            font-size: 1.5vh;
+            font-weight: 100;
+            letter-spacing: 1px;
 
+}
+i {
+    cursor: pointer;
+
+}
+.commentReply{
+    font-weight: 200;
+    font-size: 2vh;
+}
 @media (max-width: 700px){
     .profPic{
         height: 12vh;

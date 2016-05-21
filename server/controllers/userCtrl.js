@@ -119,5 +119,38 @@ updateUser: function(req, res, next) {
   },
 
 
+  addWodToUser: function(req, res, next) {
+
+      console.log(req.body)
+      User.findByIdAndUpdate(req.params.id,{$push: {"customWod": {title: req.body.title,  info: req.body.info,score: req.body.score}}},
+    {safe: true, upsert: true},
+    function(err, data) {
+        if (err) {
+            console.log(err);
+        }else{
+            
+            res.status(200).json(data);
+
+        }
+    })
+
+  }, addComment: function(req, res, next) {
+   Wod.findById(req.body.postId, function(err, post){
+     if (err) {
+       res.status(500).json(err);
+     }else {
+       post.comments.push({user: req.body.userId, comment: req.body.newComment});
+       post.save(function(err, data) {
+         if (err){
+           res.status(500).send(err);
+         }else {
+           res.status(200).json(data);
+         }
+       })
+     }
+   })
+
+ }
+
 
 }

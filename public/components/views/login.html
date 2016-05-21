@@ -5,6 +5,7 @@
 
 
             <div class="loginScreen">
+                    <form class=""  method="post" ng-click="login(user)">
 
                     <div class="loginBox">
                       <input  class='userNameLogin' ng-model="user.username"class="loginBoxText" onfocus="this.placeholder = ''"type="text" name="name" value="" placeholder="Username" onfocusout="this.placeholder = 'Username'">
@@ -15,7 +16,8 @@
                       <input class='userNameLogin' ng-model="user.password"class="loginBoxText" type="password" onfocus="this.placeholder = ''" name="name" value="" placeholder="Password" onfocusout="this.placeholder = 'Password'">
                     </div>
 
-                    <button ng-click="login(user)" class='loginButton'><div class='submitText'>Login</div></button>
+                    <button  class='loginButton'><div class='submitText'>Login</div></button>
+                </form>
 
 
                 <div class="signUpText">

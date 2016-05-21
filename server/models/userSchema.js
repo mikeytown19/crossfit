@@ -16,7 +16,13 @@ var userSchema = new Schema({
     bio:{type: String, required:false},
     gender: String,
     profpic:{type:String, default:'http://1.bp.blogspot.com/-Tb_UK9_ePUM/U7oTNS-AnSI/AAAAAAAAPLE/2TT0ltTzqF4/s1600/default+image.jpg'},
-    loc:{}
+    loc:{},
+    customWod:[{
+    title: {type: String, required: true},
+    info: {type: String, required: false},
+    score: {type: String, required: true},
+    date: { type: Date, default: Date.now }
+  }, {timestamps: true} ]
 })
 
 /////////////////////////////////////////

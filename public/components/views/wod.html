@@ -49,6 +49,12 @@
 
                             <button type="button"ng-click="postComment(currentUser._id, wods._id, newComment)" name="button">Submit</button>
                         </div>
+                        <div ng-hide='custom'>
+                            <textarea id ='customComment'placeholder='time' ng-model="storeWod"></textarea>
+
+                            <button type="button"ng-click="addCurrentWod(currentUser._id, wods._id, storeWod)" name="button">Submit</button>
+
+                        </div>
 
                             <div class='commentReply'ng-repeat='comments in wods.comments track by $index'>
                                 {{comments.user.username}}:

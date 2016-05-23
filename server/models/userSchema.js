@@ -9,8 +9,8 @@ var userSchema = new Schema({
     username:{type: String, unique: false},
     email:{type: String, required: false},
     admin: {type: Boolean, default: false, required: true},
-    Wods:[{time:Number,
-    wod:{type: mongoose.Schema.Types.ObjectId, ref: 'wod'}
+    wods:[{time:String,
+    wod:{type: mongoose.Schema.Types.ObjectId, ref: 'Wod'}
     }],
     password:{type: String, required: false},
     bio:{type: String, required:false},
@@ -28,6 +28,11 @@ var userSchema = new Schema({
 /////////////////////////////////////////
 //Populate user info and messages info//
 ///////////////////////////////////////
+userSchema.pre('find', function(next) {
+    this.populate('wod wods.wod');
+    next();
+})
+
 
 userSchema.pre('save', function(next) {
   var user = this;

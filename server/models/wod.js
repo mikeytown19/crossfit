@@ -26,4 +26,4 @@ wodSchema.pre('find', function(next) {
     next();
 })
 
-module.exports = mongoose.model('wod', wodSchema);
+module.exports = mongoose.model('Wod', wodSchema);

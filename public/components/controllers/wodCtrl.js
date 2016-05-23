@@ -1,5 +1,6 @@
 angular.module("crossfit").controller("wodCtrl", function($scope, wodService, settingsService) {
 
+
     settingsService.getCurrentUser().then(function(res) {
 
         $scope.currentUser = res.data
@@ -7,10 +8,9 @@ angular.module("crossfit").controller("wodCtrl", function($scope, wodService, se
         console.log($scope.currentUser)
     })
 
-
     $scope.getAllWods = wodService.getAllWods().then(function(res) {
-        $scope.allWods = res.data;
-    })
+    $scope.allWods = res.data;
+})
 
 
     $scope.custom = true;
@@ -22,6 +22,11 @@ angular.module("crossfit").controller("wodCtrl", function($scope, wodService, se
 
     $scope.postComment = function(userId, postId, newComment, showIndex) {
         wodService.postComment(userId, postId, newComment).then(function(res) {
+            wodService.getAllWods()
+        })
+    }
+    $scope.addCurrentWod = function(userId, postId, newComment, showIndex) {
+        wodService.addCurrentWod(userId, postId, newComment).then(function(res) {
             wodService.getAllWods()
         })
     }

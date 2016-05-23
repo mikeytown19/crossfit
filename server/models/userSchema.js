@@ -34,6 +34,7 @@ userSchema.pre('find', function(next) {
 })
 
 
+
 userSchema.pre('save', function(next) {
   var user = this;
   if (!user.isModified('password')) {

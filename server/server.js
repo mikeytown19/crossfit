@@ -57,7 +57,6 @@ app.delete('/api/wod/comment/:id/:status', wodCtrl.deleteComment);
 
 
 
-
 ////////////////
 ///////IMG/////
 //////////////

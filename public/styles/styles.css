@@ -13,6 +13,8 @@ color: inherit;
     justify-content: center;
 }
 .wods{
+    margin-top: 5vh;
+
     display: flex;
 max-width: 30vh;
 flex-direction: column;
@@ -273,10 +275,21 @@ i {
     font-size: 2vh;
 }
 @media (max-width: 700px){
+    .centerPic{
+        display: flex;
+        justify-content: center;
+    }
+    .arrow-left {
 
+  border-top: 9vh solid transparent;
+  border-bottom: -3px solid transparent;
+  border-right: 64px solid #FADE01;;
+  background-color: black;
+
+    }
     .settingsNavBar{
         width: 100%;
-        height: 7vh;
+        height: 9vh;
         display: flex;
     }
 .settingsNavBarLeft{
@@ -288,7 +301,11 @@ i {
 .settingsNavBarRight{
     width: 38%;
     background-color: #FADE01;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    letter-spacing: 1.1px;
 }
 .metconNameBox{
     display: flex;
@@ -349,6 +366,7 @@ border-radius: 54%;
 border-width: 2px;
 border-style: solid;
 border-color: white;
+margin-top: 3vh;
     }
     .wodHeader{
         display: flex;
@@ -414,19 +432,19 @@ border-color: white;
         margin-bottom: 1em;
     }
     .hamburger{
-    border: none;
-    background-color: inherit;
-    font-size: 2em;
-    margin-left: .8vh;
-    margin-top: .5vh;
-    color: slategrey;
+        border: none;
+        background-color: inherit;
+        font-size: 2em;
+        margin-left: 1.8vh;
+        margin-top: 1.5vh;
+        color: slategrey;
     }
     .hamburgerIn{
         border: none;
         background-color: inherit;
         font-size: 2em;
         margin-right: 27px;
-        margin-top: 22px;
+        margin-top: 1vh;
         color: black;
     }
     .slideout-menu {

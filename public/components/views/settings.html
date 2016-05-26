@@ -7,18 +7,22 @@
     <side-bar></side-bar>
 
 </div>
+<div class="arrow-left"></div>
+
 <div class="settingsNavBarRight">
+        <div class="" ng-click='logout()'>
+    Logout
+        </div>
+    </div>
+</div>
+<div class="centerPic">
+    <img class='profPic'ng-src="{{currentUser.profpic}}" alt="" />
 
 </div>
-</div>
-
-<img class='profPic'ng-src="{{currentUser.profpic}}" alt="" />
 
 
 
 
-<button type="button"  ng-click='logout()' name="button"><i class="fa fa-sign-out " aria-hidden="true">Logout</i>
-</button>
 
 
  <input type="file"  prof-pic profile="currentUser" accept="image/*" />

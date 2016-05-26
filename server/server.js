@@ -74,6 +74,6 @@ mongoose.connection.once('open', function() {
     console.log('Connected To MongoDB!!!');
 });
 
-app.listen(3000, function() {
-     console.log('There\'s a party in my pants');
+app.listen(Keys.port, function() {
+     console.log('There\'s a party in my pants on ' + Keys.port);
  })

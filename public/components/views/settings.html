@@ -1,14 +1,23 @@
 <navbar></navbar>
-<side-bar></side-bar>
 
+
+
+<div class="settingsNavBar">
+<div class="settingsNavBarLeft">
+    <side-bar></side-bar>
+
+</div>
+<div class="settingsNavBarRight">
+
+</div>
+</div>
 
 <img class='profPic'ng-src="{{currentUser.profpic}}" alt="" />
-<textarea class='wodNameBox'name="name" rows="3" cols="30" placeholder="string" ng-model='str'></textarea>
 
 
 
-<button type="button" name="button" ng-click='string(str)'></button>
-<button type="button" class='sidebarIcon1' ng-click='logout()' name="button"><i class="fa fa-sign-out " aria-hidden="true">Logout</i>
+
+<button type="button"  ng-click='logout()' name="button"><i class="fa fa-sign-out " aria-hidden="true">Logout</i>
 </button>
 
 

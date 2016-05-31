@@ -1,9 +1,6 @@
-angular.module("crossfit", ['satellizer','ui.router']).config(function($stateProvider, $urlRouterProvider) {
-
-
+angular.module("crossfit",['satellizer','ui.router'])
+.config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-
-
     .state('login', {
       url: '/login',
         templateUrl: 'components/views/login.html',

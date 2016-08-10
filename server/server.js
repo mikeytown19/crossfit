@@ -35,6 +35,8 @@ app.use(express.static('../public'))
 ////////////////
 ///////User////
 //////////////
+
+
 app.post('/api/user/', userCtrl.addUser);
 app.post('/auth/login', userCtrl.userLogin);
 app.post('/auth/signup', userCtrl.userSignUp);

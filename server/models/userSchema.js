@@ -28,10 +28,10 @@ var userSchema = new Schema({
 /////////////////////////////////////////
 //Populate user info and messages info//
 ///////////////////////////////////////
-userSchema.pre('find', function(next) {
-    this.populate('wod wods.wod');
-    next();
-})
+// userSchema.pre('find', function(next) {
+//     this.populate('wods');
+//     next();
+// })
 
 
 
